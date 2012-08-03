@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="MDMagick is a jQuery plugin for add helper buttons and preview to any MarkDown input field" />
+  <meta name="keywords" content="jQuery, plugin, markdown, wysiwyg" />
+  <meta name="author" content="http://fernandoguillen.info" />
+
+  <title>MDMagick</title>
+  <script src="./dependencies/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./dependencies/a-tools.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./dependencies/showdown.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./lib/mdmagick.js" type="text/javascript" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="./lib/assets/reset.css" ></style>
+  <link rel="stylesheet" href="./lib/assets/style.css" ></style>
+  <link rel="stylesheet" href="./lib/assets/mdmagick.css" ></style>
+
+  <!-- icon font -->
+  <link rel="stylesheet" href="./lib/assets/icon_font/style.css" />
+  <!--[if lte IE 7]><script src="./lib/assets/icon_font/lte-ie7.js"></script><![endif]-->
+
+  <style>
+    textarea.big {
+      height: 100px;
+    }
+
+    input.big,
+    textarea.big {
+      width: 600px;
+      padding: 5px;
+      font-size: 12px;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="container">
+
+    <h1>MDMagick</h1>
+    <h2>Add MarkDown butttons and preview to any kind of input field</h2>
+    <p><a href="https://github.com/fguillen/MDMagick">MDMagick's code</a></p>
+    <p><strong>Demo page</strong>: Focus the different input fields and interact with the helper buttons.</p>
+
+
+    <h3>Use</h3>
+    <pre>$('.css-selector').mdmagick();</pre>
+
+
+    <section>
+      <h1>A textarea</h1>
+      <p>Simple textarea is becomed in a MarkDown editor with buttons and preview</p>
+      <textarea id="textarea-1" class="big mdm-input">This is a textarea where you can **edit** and use the _above buttons_ to modify styling
+
+it has one line
+
+and another line</textarea>
+    </section>
+
+    <section>
+      <h1>A textfield</h1>
+      <p>Same can be done with a simple input text field</p>
+      <input type="text" class="big mdm-input" value="This is an input **text**" />
+    </section>
+
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Travelling Me jQuery plugin</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fernandoguillen.info" property="cc:attributionName" rel="cc:attributionURL">Fernando Guillen</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+      </p>
+    </footer>
+  </div>
+
+  <!-- google analytics -->
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  var pageTracker = _gat._getTracker("UA-3468219-1");
+  pageTracker._initData();
+  pageTracker._trackPageview();
+  </script>
+  <!-- google analytics -->
+</body>
+</html>
+

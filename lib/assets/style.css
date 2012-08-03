@@ -1,0 +1,68 @@
+body {
+  font-family: 'DINNextRoundedLTProLight', Arial, Helvetica, sans-serif;
+  background-color: #EAEAEA;
+  margin: 0px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  font-family: "Consolas", monospace;
+  padding: 10px;
+  background-color: white;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+#container > h1 {
+  background-color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+h2{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+h3{
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+body > #container{
+  margin: 0 auto;
+  width: 700px;
+  padding: 0px 50px;
+  background-color: #F2F2F2;
+}
+
+section > h1 {
+  font-size: 1.2em;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 0.2em;
+  margin-top: 2em;
+  padding-bottom: 0.2em;
+}
+
+section p {
+  margin-bottom: 0.5em;
+}
+
+footer{
+  text-align: center;
+  padding-bottom: 1em;
+}

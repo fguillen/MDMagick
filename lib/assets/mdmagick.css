@@ -1,0 +1,67 @@
+div.mdm-controls,
+div.mdm-preview {
+  /*display: none;*/
+  background-color: white;
+}
+
+div.mdm-controls.focus,
+div.mdm-preview.focus {
+  display: block;
+}
+
+div.mdm-controls {
+  height: 35px;
+  width: 220px;
+}
+
+div.mdm-controls ul {
+  padding: 10px;
+}
+
+div.mdm-controls ul li{
+  display: inline;
+  margin: 0;
+}
+
+div.mdm-controls ul li a{
+  color: black;
+  padding: 10px;
+  background-color: white;
+  text-decoration: none;
+}
+
+div.mdm-controls ul li a span{
+  display: none;
+}
+
+div.mdm-controls ul li a:active{
+  color: #ccc;
+  position: relative;
+  top: 1px;
+}
+
+div.mdm-preview strong {
+  font-weight: bold;
+}
+
+div.mdm-preview em {
+  font-style: italic;
+}
+
+div.mdm-preview h1,
+div.mdm-preview h2,
+div.mdm-preview h3{
+  font-weight: bold;
+}
+
+div.mdm-preview h1 {
+  font-size: 18px;
+}
+
+div.mdm-preview h2 {
+  font-size: 14px;
+}
+
+div.mdm-preview h3 {
+  font-size: 12px;
+}
