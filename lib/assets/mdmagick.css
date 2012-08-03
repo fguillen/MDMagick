@@ -48,6 +48,12 @@ div.mdm-preview em {
   font-style: italic;
 }
 
+div.mdm-preview ul {
+  margin-left: 10px;
+  list-style-type: disc;
+}
+
+
 div.mdm-preview h1,
 div.mdm-preview h2,
 div.mdm-preview h3{
