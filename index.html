@@ -50,17 +50,42 @@
     <section>
       <h1>A textarea</h1>
       <p>Simple textarea is becomed in a MarkDown editor with buttons and preview</p>
-      <textarea id="textarea-1" class="big mdm-input">This is a textarea where you can **edit** and use the _above buttons_ to modify styling
+      <textarea id="input-1" class="big">This is a textarea where you can **edit** and use the _above buttons_ to modify styling
 
 it has one line
 
-and another line</textarea>
+and another line
+
+A list of elements:
+
+- one
+- two
+- three</textarea>
+
+      <script>
+        $(function(){
+          $("#input-1").mdmagick();
+        })
+      </script>
+
     </section>
 
     <section>
       <h1>A textfield</h1>
       <p>Same can be done with a simple input text field</p>
-      <input type="text" class="big mdm-input" value="This is an input **text**" />
+      <input id="input-2" type="text" class="big" value="This is an input **text**" />
+
+      <script>
+        $(function(){
+          $("#input-2").mdmagick();
+        })
+      </script>
+    </section>
+
+    <section>
+      <h1>Authomatic MDMagick with a textarea</h1>
+      <p>Every element with class <strong>mdm-input</strong> will be becomed in a MDMagick input.</p>
+      <textarea id="textarea-1" class="big mdm-input">This is a textarea **authomatically** converted to a MDMagick input.</textarea>
     </section>
 
     <footer>
