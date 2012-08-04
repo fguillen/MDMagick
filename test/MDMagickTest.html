@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>MDMagick Jasmine Specs</title>
+
+  <link rel="stylesheet" type="text/css" href="./jasmine/jasmine.css">
+  <script type="text/javascript" src="./jasmine/jasmine.js"></script>
+  <script type="text/javascript" src="./jasmine/jasmine-html.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="./MDMagickSpec.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="../dependencies/jquery.js"></script>
+  <script type="text/javascript" src="../dependencies/showdown.js"></script>
+  <script type="text/javascript" src="../dependencies/a-tools.js"></script>
+
+  <script type="text/javascript" src="../lib/mdmagick.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var trivialReporter = new jasmine.TrivialReporter();
+
+      jasmineEnv.addReporter(trivialReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return trivialReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+  <section id="section-1">
+    <textarea id="textarea-1"></textarea>
+  </section>
+
+  <section id="section-2">
+    <textarea id="textarea-2" class="mdm-input">This is the text, with **bold** and _italic_.</textarea>
+  </section>
+
+  <section id="section-3">
+    <textarea id="textarea-3"></textarea>
+  </section>
+</body>
+</html>

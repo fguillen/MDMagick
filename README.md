@@ -66,6 +66,11 @@ Adding the special class `mdm-input` to any input field:
 
 **Note**: if you application is already importing some of the `dependencies` you have not to do it twice.
 
+## TODO
+
+* Check for performance issues
+* Improve the slideOut and In animations
+
 ## License
 
 Creative Commons BY
