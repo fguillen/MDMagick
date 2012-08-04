@@ -1,17 +1,50 @@
+@-webkit-keyframes slideOut {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    max-height: 500px;
+  }
+  to {
+    max-height: 0px;
+  }
+}
+
 div.mdm-controls,
 div.mdm-preview {
-  /*display: none;*/
+  padding: 0px;
+  max-height: 0px;
+  overflow: hidden;
   background-color: white;
+  box-sizing: border-box;
+}
+
+div.mdm-controls.blur,
+div.mdm-preview.blur {
+  -webkit-animation: slideIn .5s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 div.mdm-controls.focus,
 div.mdm-preview.focus {
-  display: block;
+  -webkit-animation: slideOut 2s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+div.mdm-preview.focus {
+  padding: 5px;
 }
 
 div.mdm-controls {
-  height: 35px;
-  width: 220px;
+  width: 144px;
+
+  font-size: 12px;
 }
 
 div.mdm-controls ul {
@@ -24,8 +57,8 @@ div.mdm-controls ul li{
 }
 
 div.mdm-controls ul li a{
+  padding: 5px;
   color: black;
-  padding: 10px;
   background-color: white;
   text-decoration: none;
 }
