@@ -16,6 +16,10 @@ A special control buttons will be added on top of the selected input field with 
 
 And a preview div will be added on the bottom of the selected input field with a MarkDown previsualization of the selected input field content.
 
+## Version
+
+* 0.0.1 (but already in production applications)
+
 ## Usage
 
 ### Explicitly
