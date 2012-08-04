@@ -1,6 +1,6 @@
 # MDMagick
 
-Add MarkDown butttons and preview to any kind of input field.
+jQuery plugin to add MarkDown butttons and preview to any kind of input field.
 
 Check the [demo page](http://fguillen.github.com/MDMagick)
 
