@@ -4,17 +4,17 @@ describe( "MDMagick", function(){
   });
 
   describe("MDM Loading", function() {
-    it("authomatic mdm-input elements should have mdm-controls div", function() {
-      expect( $("#section-2 .mdm-controls").length ).toEqual( 1 )
+    it("authomatic mdm-input elements should have mdm-buttons div", function() {
+      expect( $("#section-2 .mdm-buttons").length ).toEqual( 1 )
     });
 
     it("authomatic mdm-input elements should have mdm-preview div", function() {
       expect( $("#section-2 .mdm-preview").length ).toEqual( 1 );
     });
 
-    it("non authomatic mdm-input elements should not have mdm-controls div", function() {
-      expect( $("#section-1 .mdm-controls").length ).toEqual( 0 );
-      expect( $("#section-3 .mdm-controls").length ).toEqual( 0 );
+    it("non authomatic mdm-input elements should not have mdm-buttons div", function() {
+      expect( $("#section-1 .mdm-buttons").length ).toEqual( 0 );
+      expect( $("#section-3 .mdm-buttons").length ).toEqual( 0 );
     });
 
     it("non authomatic mdm-input elements should not have mdm-previw div", function() {
@@ -24,7 +24,7 @@ describe( "MDMagick", function(){
 
     it("input field should be converted to a MDMagick input", function() {
       $("#textarea-1").mdmagick();
-      expect( $("#section-1 .mdm-controls").length ).toEqual( 1 );
+      expect( $("#section-1 .mdm-buttons").length ).toEqual( 1 );
       expect( $("#section-1 .mdm-preview").length ).toEqual( 1 );
     });
 
@@ -46,35 +46,35 @@ describe( "MDMagick", function(){
 
     it("should bold text", function() {
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-controls .icon-bold").click();
+      $("#section-2 .mdm-buttons .icon-bold").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p><strong>This</strong> is the text, with <strong>bold</strong> and <em>italic</em>.</p>" );
     });
 
     it("should italic text", function() {
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-controls .icon-italic").click();
+      $("#section-2 .mdm-buttons .icon-italic").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p><em>This</em> is the text, with <strong>bold</strong> and <em>italic</em>.</p>" );
     });
 
     it("should title text", function() {
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-controls .icon-title").click();
+      $("#section-2 .mdm-buttons .icon-title").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<h1>This is the text, with <strong>bold</strong> and <em>italic</em>.</h1>" );
-      $("#section-2 .mdm-controls .icon-title").click();
+      $("#section-2 .mdm-buttons .icon-title").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<h2>This is the text, with <strong>bold</strong> and <em>italic</em>.</h2>" );
     });
 
     it("should add a link", function() {
       spyOn( window, "prompt" ).andReturn( "http://google.com" );
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-controls .icon-link").click();
+      $("#section-2 .mdm-buttons .icon-link").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p><a href=\"http://google.com\">This</a> is the text, with <strong>bold</strong> and <em>italic</em>.</p>" );
     });
 
     it("should list text", function() {
       $("#section-2 .mdm-input").val( "This is the list:\n\none\ntwo\nthree\n\nand more text" );
       $("#section-2 .mdm-input").setSelection(21,30);
-      $("#section-2 .mdm-controls .icon-list").click();
+      $("#section-2 .mdm-buttons .icon-list").click();
 
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p>This is the list:</p>\n\n<ul>\n<li>one</li>\n<li>two</li>\n<li>three</li>\n</ul>\n\n<p>and more text</p>" );
     });

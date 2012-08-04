@@ -16,7 +16,7 @@
   }
 }
 
-div.mdm-controls,
+div.mdm-buttons,
 div.mdm-preview {
   padding: 0px;
   max-height: 0px;
@@ -25,13 +25,13 @@ div.mdm-preview {
   box-sizing: border-box;
 }
 
-div.mdm-controls.blur,
+div.mdm-buttons.blur,
 div.mdm-preview.blur {
   -webkit-animation: slideIn .5s;
   -webkit-animation-fill-mode: forwards;
 }
 
-div.mdm-controls.focus,
+div.mdm-buttons.focus,
 div.mdm-preview.focus {
   -webkit-animation: slideOut 2s;
   -webkit-animation-fill-mode: forwards;
@@ -41,33 +41,33 @@ div.mdm-preview.focus {
   padding: 5px;
 }
 
-div.mdm-controls {
+div.mdm-buttons {
   width: 144px;
 
   font-size: 12px;
 }
 
-div.mdm-controls ul {
+div.mdm-buttons ul {
   padding: 10px;
 }
 
-div.mdm-controls ul li{
+div.mdm-buttons ul li{
   display: inline;
   margin: 0;
 }
 
-div.mdm-controls ul li a{
+div.mdm-buttons ul li a{
   padding: 5px;
   color: black;
   background-color: white;
   text-decoration: none;
 }
 
-div.mdm-controls ul li a span{
+div.mdm-buttons ul li a span{
   display: none;
 }
 
-div.mdm-controls ul li a:active{
+div.mdm-buttons ul li a:active{
   color: #ccc;
   position: relative;
   top: 1px;

@@ -24,9 +24,7 @@ Using the `$(<selector>).mdmagick()` call:
 
     <textarea id="my-textarea"></textarea>
     <script>
-      $(function(){
-        $("#my-textarea").mdmagick();
-      })
+      $(function(){ $("#my-textarea").mdmagick(); })
     </script>
 
 or Implicitly:
