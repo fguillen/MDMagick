@@ -40,8 +40,8 @@ Adding the special class `mdm-input` to any input field:
 ## Dependencies
 
 * jquery
-* a-tools
-* showdown
+* [a-tools](http://archive.plugins.jquery.com/project/a-tools)
+* [showdown](https://github.com/coreyti/showdown/)
 
 ## Install
 
@@ -75,7 +75,7 @@ Adding the special class `mdm-input` to any input field:
 
 ## License
 
-Creative Commons BY
+This work is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 
 ## Attributions
 
