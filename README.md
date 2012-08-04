@@ -37,6 +37,14 @@ Adding the special class `mdm-input` to any input field:
 
     <textarea class="mdm-input"></textarea>
 
+## Browsers support
+
+Tested in:
+
+* (OSX) Chrome 21.0.1180.57
+* (OSX) Firefox 8.0.1
+* (OSX) Safari 6.0
+
 ## Dependencies
 
 * jquery

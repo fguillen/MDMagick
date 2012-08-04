@@ -1,19 +1,41 @@
+@keyframes slideOut {
+  from { max-height: 0px; }
+  to { max-height: 500px; }
+}
+
+@keyframes slideIn {
+  from { max-height: 500px; }
+  to { max-height: 0px; }
+}
+
 @-webkit-keyframes slideOut {
-  from {
-    max-height: 0px;
-  }
-  to {
-    max-height: 500px;
-  }
+  from { max-height: 0px; }
+  to { max-height: 500px; }
 }
 
 @-webkit-keyframes slideIn {
-  from {
-    max-height: 500px;
-  }
-  to {
-    max-height: 0px;
-  }
+  from { max-height: 500px; }
+  to { max-height: 0px; }
+}
+
+@-o-keyframes slideOut {
+  from { max-height: 0px; }
+  to { max-height: 500px; }
+}
+
+@-o-keyframes slideIn {
+  from { max-height: 500px; }
+  to { max-height: 0px; }
+}
+
+@-moz-keyframes slideOut {
+  from { max-height: 0px; }
+  to { max-height: 500px; }
+}
+
+@-moz-keyframes slideIn {
+  from { max-height: 500px; }
+  to { max-height: 0px; }
 }
 
 div.mdm-buttons,
@@ -30,12 +52,24 @@ div.mdm-buttons.blur,
 div.mdm-preview.blur {
   -webkit-animation: slideIn .5s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: slideIn .5s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: slideIn .5s;
+  -o-animation-fill-mode: forwards;
+  animation: slideIn .5s;
+  animation-fill-mode: forwards;
 }
 
 div.mdm-buttons.focus,
 div.mdm-preview.focus {
   -webkit-animation: slideOut 2s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: slideOut 2s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: slideOut 2s;
+  -o-animation-fill-mode: forwards;
+  animation: slideOut 2s;
+  animation-fill-mode: forwards;
 }
 
 div.mdm-preview.focus {
