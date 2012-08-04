@@ -45,12 +45,12 @@ Adding the special class `mdm-input` to any input field:
 
 #### 1. Download [the last version of the code](https://github.com/fguillen/MDMagick/zipball/master).
 #### 2. Unzip the package
-#### 3. Copy `dependencies` and `lib` folders to a _public_ folder in your web application. Let's call it `mdmagick`.
+#### 3. Copy `vendor` and `lib` folders to a _public_ folder in your web application. Let's call it `mdmagick`.
 #### 4. Import the dependencies:
 
-    <script src="./mdmagick/dependencies/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./mdmagick/dependencies/a-tools.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./mdmagick/dependencies/showdown.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./mdmagick/vendor/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./mdmagick/vendor/a-tools.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./mdmagick/vendor/showdown.js" type="text/javascript" charset="utf-8"></script>
 
 #### 5. Import the mdmagick plugin:
 
@@ -64,7 +64,7 @@ Adding the special class `mdm-input` to any input field:
 
 #### 7. You are ready!
 
-**Note**: if you application is already importing some of the `dependencies` you have not to do it twice.
+**Note**: if you application is already importing some of the _dependencies_ you have not to do it twice.
 
 ## TODO
 
