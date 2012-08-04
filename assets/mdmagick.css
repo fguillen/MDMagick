@@ -18,6 +18,7 @@
 
 div.mdm-buttons,
 div.mdm-preview {
+  line-height: 1em;
   padding: 0px;
   max-height: 0px;
   overflow: hidden;
@@ -42,13 +43,13 @@ div.mdm-preview.focus {
 }
 
 div.mdm-buttons {
-  width: 144px;
+  width: 148px;
 
   font-size: 12px;
 }
 
 div.mdm-buttons ul {
-  padding: 10px;
+  margin: 10px;
 }
 
 div.mdm-buttons ul li{
@@ -59,7 +60,6 @@ div.mdm-buttons ul li{
 div.mdm-buttons ul li a{
   padding: 5px;
   color: black;
-  background-color: white;
   text-decoration: none;
 }
 
