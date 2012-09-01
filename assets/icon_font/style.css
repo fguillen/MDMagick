@@ -10,33 +10,33 @@
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
+.mdm-buttons [data-mdm-icon]:before {
 	font-family: 'icomoon';
 	content: attr(data-icon);
 	speak: none;
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+.mdm-buttons [class^="mdm-icon-"]:before, [class*=" mdm-icon-"]:before {
 	font-family: 'icomoon';
 	font-style: normal;
 	speak: none;
 }
-.icon-bold:before {
+.mdm-buttons .mdm-icon-bold:before {
 	content: "\21";
 }
-.icon-title:before {
+.mdm-buttons .mdm-icon-title:before {
 	content: "\22";
 }
-.icon-italic:before {
+.mdm-buttons .mdm-icon-italic:before {
 	content: "\23";
 }
-.icon-underline:before {
+.mdm-buttons .mdm-icon-underline:before {
 	content: "\24";
 }
-.icon-list:before {
+.mdm-buttons .mdm-icon-list:before {
 	content: "\26";
 }
-.icon-link:before {
+.mdm-buttons .mdm-icon-link:before {
 	content: "\25";
 }
