@@ -46,37 +46,62 @@ describe( "MDMagick", function(){
 
     it("should bold text", function() {
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-buttons .icon-bold").click();
+      $("#section-2 .mdm-buttons .mdm-bold").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p><strong>This</strong> is the text, with <strong>bold</strong> and <em>italic</em>.</p>" );
     });
 
     it("should italic text", function() {
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-buttons .icon-italic").click();
+      $("#section-2 .mdm-buttons .mdm-italic").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p><em>This</em> is the text, with <strong>bold</strong> and <em>italic</em>.</p>" );
     });
 
     it("should title text", function() {
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-buttons .icon-title").click();
+      $("#section-2 .mdm-buttons .mdm-title").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<h1>This is the text, with <strong>bold</strong> and <em>italic</em>.</h1>" );
-      $("#section-2 .mdm-buttons .icon-title").click();
+      $("#section-2 .mdm-buttons .mdm-title").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<h2>This is the text, with <strong>bold</strong> and <em>italic</em>.</h2>" );
     });
 
     it("should add a link", function() {
       spyOn( window, "prompt" ).andReturn( "http://google.com" );
       $("#section-2 .mdm-input").setSelection(0,4);
-      $("#section-2 .mdm-buttons .icon-link").click();
+      $("#section-2 .mdm-buttons .mdm-link").click();
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p><a href=\"http://google.com\">This</a> is the text, with <strong>bold</strong> and <em>italic</em>.</p>" );
     });
 
     it("should list text", function() {
       $("#section-2 .mdm-input").val( "This is the list:\n\none\ntwo\nthree\n\nand more text" );
       $("#section-2 .mdm-input").setSelection(21,30);
-      $("#section-2 .mdm-buttons .icon-list").click();
+      $("#section-2 .mdm-buttons .mdm-list").click();
 
       expect( $("#section-2 .mdm-preview").html() ).toEqual( "<p>This is the list:</p>\n\n<ul>\n<li>one</li>\n<li>two</li>\n<li>three</li>\n</ul>\n\n<p>and more text</p>" );
+    });
+  });
+
+  describe("MDM panels (buttons and preview)", function() {
+    beforeEach(function() {
+    });
+
+    it("should show panels on focus", function() {
+      expect( $("#section-4 #textarea-4").prev( ".mdm-buttons" ).hasClass( "focus" ) ).toBeFalsy();
+      expect( $("#section-4 #textarea-4").next( ".mdm-preview" ).hasClass( "focus" ) ).toBeFalsy();
+
+      $("#section-4 #textarea-4").focus();
+
+      expect( $("#section-4 #textarea-4").prev( ".mdm-buttons" ).hasClass( "focus" ) ).toBeTruthy();
+      expect( $("#section-4 #textarea-4").next( ".mdm-preview" ).hasClass( "focus" ) ).toBeTruthy();
+    });
+
+    it("should hide panels on blur", function() {
+      $("#section-4 #textarea-4").prev( ".mdm-buttons" ).addClass( "focus" )
+      $("#section-4 #textarea-4").next( ".mdm-preview" ).addClass( "focus" )
+
+      $("#section-4 #textarea-4").blur();
+
+      expect( $("#section-4 #textarea-4").prev( ".mdm-buttons" ).hasClass( "focus" ) ).toBeFalsy();
+      expect( $("#section-4 #textarea-4").next( ".mdm-preview" ).hasClass( "focus" ) ).toBeFalsy();
     });
   });
 
