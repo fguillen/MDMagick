@@ -76,6 +76,19 @@ Tested in:
 
 **Note**: if you application is already importing some of the _dependencies_ you have not to do it twice.
 
+## FAQ
+
+### How to silent the log:
+
+Add:
+
+    <script> window.MDM_SILENT = true; </script>
+
+Before the:
+
+    <script src="./lib/mdmagick.js" type="text/javascript" charset="utf-8"></script>
+
+
 ## TODO
 
 * Check for performance issues
