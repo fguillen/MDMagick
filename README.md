@@ -13,6 +13,7 @@ A special control buttons will be added on top of the selected input field with 
 * link
 * list
 * title
+* image
 
 And a preview div will be added on the bottom of the selected input field with a MarkDown previsualization of the selected input field content.
 
