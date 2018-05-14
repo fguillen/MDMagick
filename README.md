@@ -4,7 +4,7 @@ jQuery plugin to add MarkDown butttons and preview to any kind of input field.
 
 Check the [demo page](http://fguillen.github.com/MDMagick)
 
-## How it works
+## How it works
 
 A special control buttons will be added on top of the selected input field with commands like:
 
